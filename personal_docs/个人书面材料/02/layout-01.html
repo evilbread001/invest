@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>葛蕊 - 简历</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif; font-size: 13px; color: #2d2d2d; background: #fff; line-height: 1.6; }
+  .page { max-width: 794px; margin: 0 auto; padding: 48px 52px; }
+
+  /* 头部 */
+  .header { text-align: center; margin-bottom: 28px; border-bottom: 2px solid #1a56db; padding-bottom: 18px; }
+  .header h1 { font-size: 32px; font-weight: 700; letter-spacing: 6px; color: #1a1a1a; margin-bottom: 8px; }
+  .header .contact { font-size: 12.5px; color: #555; letter-spacing: 0.5px; }
+  .header .contact span { margin: 0 12px; }
+
+  /* 区块 */
+  .section { margin-bottom: 22px; }
+  .section-title {
+    font-size: 13.5px; font-weight: 700; color: #1a56db;
+    text-transform: uppercase; letter-spacing: 2px;
+    border-bottom: 1px solid #d0dff8; padding-bottom: 5px;
+    margin-bottom: 12px;
+  }
+
+  /* 教育 */
+  .edu-item { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; }
+  .edu-item .school { font-weight: 700; font-size: 13.5px; }
+  .edu-item .degree { color: #555; margin-left: 10px; }
+  .edu-item .date { color: #888; font-size: 12px; white-space: nowrap; }
+  .edu-item .courses { color: #666; font-size: 12px; margin-top: 2px; }
+
+  /* 工作 */
+  .job-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 3px; }
+  .job-company { font-weight: 700; font-size: 14px; }
+  .job-title { color: #1a56db; font-weight: 600; margin-left: 8px; font-size: 13px; }
+  .job-date { color: #888; font-size: 12px; }
+  .job-desc { color: #555; font-size: 12px; margin-bottom: 10px; }
+
+  .project { margin-bottom: 14px; }
+  .project-title { font-weight: 700; font-size: 13px; color: #1a1a1a; margin-bottom: 5px; }
+  .project-title .badge {
+    display: inline-block; background: #e8f0fe; color: #1a56db;
+    font-size: 11px; padding: 1px 7px; border-radius: 10px;
+    margin-left: 6px; font-weight: 600;
+  }
+  ul { padding-left: 16px; }
+  ul li { margin-bottom: 4px; font-size: 12.5px; color: #333; }
+  ul li strong { color: #1a1a1a; }
+
+  /* 技能 */
+  .skills-grid { display: grid; grid-template-columns: 120px 1fr; gap: 6px 12px; }
+  .skill-label { font-weight: 700; color: #333; font-size: 12.5px; }
+  .skill-value { color: #444; font-size: 12.5px; }
+
+  @media print {
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .page { padding: 32px 40px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <h1>葛　蕊</h1>
+    <div class="contact">
+      <span>📞 187-8459-5920</span>
+      <span>✉ 2564797524@qq.com</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">教育背景</div>
+    <div class="edu-item">
+      <div>
+        <span class="school">伦敦帝国理工学院</span>
+        <span class="degree">环境数据科学与机器学习 · 硕士</span>
+      </div>
+      <span class="date">2022.09 — 2023.12</span>
+    </div>
+    <div style="color:#666;font-size:12px;margin-bottom:8px">主修：机器学习、深度学习、数值计算、优化方法、大数据分析</div>
+    <div class="edu-item">
+      <div>
+        <span class="school">西南财经大学</span>
+        <span class="degree">经济统计学 · 本科</span>
+      </div>
+      <span class="date">2018.09 — 2022.06</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">工作经历</div>
+    <div class="job-header">
+      <div><span class="job-company">[公司名]</span><span class="job-title">AI Agent 工程师</span></div>
+      <span class="job-date">2024.01 — 至今</span>
+    </div>
+    <div class="job-desc">负责工业AI平台Agent系统的研发与客户交付，独立承担多家汽车电子客户从需求分析、架构设计、开发到生产部署的全流程工作。</div>
+
+    <div class="project">
+      <div class="project-title">● 售后诊断 Agent<span class="badge">项目负责人</span></div>
+      <ul>
+        <li>主导面向汽车电子质量领域的售后诊断Agent系统，已在德赛西威、威迈斯、星宇等多家车企客户生产环境上线；</li>
+        <li>设计并实现基于故障树的自动诊断推理引擎：节点状态机驱动多步骤推理，支持串行/并行推理路径、多角色任务自动分发与催办；</li>
+        <li>开发<strong>自然语言建树 pipeline</strong>：输入8D报告、FMEA、会议记录等非结构化文档，通过LLM自动提取诊断逻辑并生成Agent可执行的OWL故障树文件，将原本依赖领域专家手工建模的过程自动化；</li>
+        <li>从0到1构建<strong>Agent标准化开发框架</strong>（迭代至v0.5），实现模板化快速复制至新客户场景；</li>
+        <li>独立完成诊断结果持久化、8D报告自动生成、附件管理、推卡通知等核心模块；</li>
+        <li>主导跨团队整体联调（前端/算法/客户方），推动多客户项目如期验收上线。</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-title">● 产线诊断 Agent</div>
+      <ul>
+        <li>为德赛西威PCBA产线、保隆空簧氦检产线等场景完成诊断Agent落地；</li>
+        <li>开发UDF自定义节点库，支持SPC/CPK异常检测、控制图输出等质检数据自动分析能力；</li>
+        <li>负责多客户生产环境的服务部署、OTA升级与线上问题排查。</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-title">● LADS SDK 开发与维护</div>
+      <ul>
+        <li>参与开发并维护面向工业AI平台的数据科学工具包LADS，提供Agent生命周期管理（<code>lads agent publish/deploy/new</code>）、故障树注册与转换（<code>lads fta merge/transform</code>）、模型发布（<code>lads model publish</code>）等核心命令；</li>
+        <li>支持开发者通过统一CLI完成从本地开发到生产部署的全流程，编写CLI使用文档与示例；</li>
+        <li>调研评估LangGraph、Hermes Agent等主流框架，输出工业场景下workflow与agentic架构的对比分析。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">专业技能</div>
+    <div class="skills-grid">
+      <span class="skill-label">编程语言</span>
+      <span class="skill-value">Python（主要）、SQL、C++</span>
+      <span class="skill-label">AI / Agent</span>
+      <span class="skill-value">Agent工作流编排、Tool Calling、RAG、Prompt Engineering、非结构化文档结构化抽取、故障树推理引擎设计</span>
+      <span class="skill-label">工程技术</span>
+      <span class="skill-value">Docker、PostgreSQL、Kafka、Redis、MinIO、Git</span>
+      <span class="skill-label">数据分析</span>
+      <span class="skill-value">机器学习、深度学习（LSTM/CNN/RNN）、统计建模</span>
+      <span class="skill-label">语言能力</span>
+      <span class="skill-value">英语（托福108 / GRE322 / CET-6）</span>
+      <span class="skill-label">证书</span>
+      <span class="skill-value">计算机二级（Python）</span>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
